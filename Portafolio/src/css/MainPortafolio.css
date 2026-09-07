@@ -1,0 +1,248 @@
+:root {
+    --bg-primary: #080B12;
+    --bg-secondary: #0F1420;
+    --bg-card: #151C2B;
+
+    --blue-primary: #2563EB;
+    --blue-light: #3B82F6;
+
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+
+    --border: #26334A;
+}
+
+.HeroSection {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+
+.HeroSection article {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.ListaPresentacion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 650px;
+}
+
+.ListaPresentacion li {
+    color: var(--text-secondary);
+}
+
+.TextoDestacado {
+    color: var(--blue-primary);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+
+.ListaPresentacion h1 {
+    color: var(--text-primary);
+    font-size: clamp(45px, 7vw, 80px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 0 0 20px 0;
+
+    text-shadow: 0 0 25px rgba(37, 99, 235, 0.15);
+}
+
+.TextoDestacado2 {
+    color: var(--blue-light);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 3px solid var(--blue-primary);
+}
+
+
+.ListaPresentacion li:nth-last-child(2) {
+    color: var(--text-secondary);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+.BotonHeader {
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+    border: 1px solid #0d6efd;
+
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+.BotonHeader:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+.DivImg {
+    width: 420px;
+    height: 420px;
+
+    overflow: hidden;
+    border-radius: 20px;
+
+    border: 1px solid var(--blue-primary);
+
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.15);
+
+    flex-shrink: 0;
+}
+
+.DivImg img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+.textSecondary {
+    color: var(--text-secondary);
+}
+
+.RedesSociales {
+    margin-top: 30px;
+}
+
+.RedesSociales p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.IconosRedes {
+    display: flex;
+    gap: 12px;
+}
+
+.IconosRedes a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text-secondary);
+
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.IconosRedes i {
+    font-size: 20px;
+}
+
+.IconosRedes a:hover {
+    color: var(--blue-light);
+    border-color: var(--blue-primary);
+
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+
+    transform: translateY(-3px);
+}
+
+@media (max-width: 991px) {
+
+    .HeroSection {
+        min-height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .HeroSection article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ListaPresentacion {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .TextoDestacado2 {
+        border-left: none;
+        border-bottom: 3px solid var(--blue-primary);
+
+        display: inline-block;
+
+        padding-left: 0;
+        padding-bottom: 8px;
+    }
+
+    .IconosRedes {
+        justify-content: center;
+    }
+
+    .DivImg {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 576px) {
+
+    .HeroSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .ListaPresentacion h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .TextoDestacado {
+        font-size: 16px;
+    }
+
+    .TextoDestacado2 {
+        font-size: 17px;
+    }
+
+    .ListaPresentacion li:nth-last-child(2) {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .DivImg {
+        width: 260px;
+        height: 260px;
+    }
+
+    .BotonHeader {
+        margin: 5px !important;
+        padding: 9px 16px;
+    }
+
+    .IconosRedes a {
+        width: 42px;
+        height: 42px;
+    }
+}

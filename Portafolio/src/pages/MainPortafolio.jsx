@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import PortafolioMain from "../components/PortaFolioMain";
+import PortafolioMain from "../components/PortafolioMain";
 
 function MainPortafolio() {
   return (
