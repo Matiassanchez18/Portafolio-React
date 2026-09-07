@@ -15,6 +15,10 @@
 .NavHeader {
     background-color: var(--bg-primary);
     border-bottom: 1px solid var(--border);
+
+    ul{
+        list-style: none;
+    }
 }
 
 .NavHeader .nav-link {
