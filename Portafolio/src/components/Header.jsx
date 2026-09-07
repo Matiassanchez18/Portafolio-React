@@ -27,7 +27,7 @@ function Header() {
               <Nav.Link href="#" className="active">
                 Inicio
               </Nav.Link>
-              <Nav.Link href="#features">Sobre mi</Nav.Link>
+              <Nav.Link href="#features" className="mx-4">Sobre mi</Nav.Link>
               <Nav.Link href="#pricing">Contactos</Nav.Link>
             </Nav>
           </div>
