@@ -18,14 +18,14 @@ function Header() {
 
           <div className="position-absolute start-50 translate-middle-x">
             <Nav>
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <Nav.Link href="#" className="active">Inicio</Nav.Link>
+              <Nav.Link href="#features">Sobre mi</Nav.Link>
+              <Nav.Link href="#pricing">Contactos</Nav.Link>
             </Nav>
           </div>
 
           <div className="ms-auto">
-            <Button variant="outline-primary">Primary</Button>
+            <Button className="BotonHeader" variant="outline-primary">Trabajemos juntos</Button>
           </div>
         </div>
       </Navbar>

@@ -37,3 +37,8 @@ img{
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
+
+.BotonHeader {
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+    border: 1px solid #0d6efd;
+}
