@@ -1,45 +1,40 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "../css/Header.css";
-import foto from "../assets/LogoMSportafolio.png";
 import Button from "react-bootstrap/Button";
+import "../css/Header.css";
 
 function Header() {
   return (
-    <>
-      <Navbar className="NavHeader p-3">
-        <div className="d-flex align-items-center w-100 position-relative">
-          <div>
-            <ul>
-              <li>
-                <Navbar.Brand href="#home" className="nombre">
-                  Matias Sanchez
-                </Navbar.Brand>
-              </li>
-              <li>
-                <p>Programador</p>
-              </li>
-            </ul>
-          </div>
-
-          <div className="position-absolute start-50 translate-middle-x">
-            <Nav>
-              <Nav.Link href="#" className="active">
-                Inicio
-              </Nav.Link>
-              <Nav.Link href="#features" className="mx-4">Sobre mi</Nav.Link>
-              <Nav.Link href="#pricing">Contactos</Nav.Link>
-            </Nav>
-          </div>
-
-          <div className="ms-auto">
-            <Button className="BotonHeader" variant="outline-primary">
-              Trabajemos juntos
-            </Button>
-          </div>
+    <Navbar expand="lg" className="NavHeader p-3">
+      <Navbar.Brand href="#home" className="nombre">
+        <div>
+          Matias Sanchez
+          <p className="profesion">Programador</p>
         </div>
-      </Navbar>
-    </>
+      </Navbar.Brand>
+
+      <Navbar.Toggle aria-controls="navbar-nav" />
+
+      <Navbar.Collapse id="navbar-nav">
+        <Nav className="mx-auto">
+          <Nav.Link href="#home" className="active">
+            Inicio
+          </Nav.Link>
+
+          <Nav.Link href="#features" className="mx-lg-4">
+            Sobre mí
+          </Nav.Link>
+
+          <Nav.Link href="#pricing">
+            Contacto
+          </Nav.Link>
+        </Nav>
+
+        <Button className="BotonHeader" variant="outline-primary">
+          Trabajemos juntos
+        </Button>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
