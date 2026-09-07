@@ -1,0 +1,29 @@
+:root {
+    --bg-primary: #080B12;
+    --bg-secondary: #0F1420;
+    --bg-card: #151C2B;
+
+    --blue-primary: #2563EB;
+    --blue-light: #3B82F6;
+
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+
+    --border: #26334A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'Inter', sans-serif;
+  --font-title: 'Playfair Display', serif;
+}
+
+body {
+  font-family: var(--font-body) ;
+  background-color: var(--bg-primary) !important;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title) ;
+}

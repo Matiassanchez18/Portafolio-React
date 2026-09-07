@@ -1,0 +1,39 @@
+:root {
+    --bg-primary: #080B12;
+    --bg-secondary: #0F1420;
+    --bg-card: #151C2B;
+
+    --blue-primary: #2563EB;
+    --blue-light: #3B82F6;
+
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+
+    --border: #26334A;
+}
+
+.NavHeader {
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border);
+}
+
+.NavHeader .nav-link {
+    color: var(--text-secondary);
+}
+
+.NavHeader .nav-link:hover {
+    color: var(--text-primary);
+}
+
+img{
+    width: 50px;
+    object-fit: cover;
+}
+
+.nombre {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
