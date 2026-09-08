@@ -4,6 +4,8 @@ import Card from "react-bootstrap/Card";
 import foto from "../assets/SDT.png";
 import fotoGammer from "../assets/ProyectoGammer.png";
 import FotoDeporTuc from "../assets/DeporTuc.png";
+import DevJobs from "../assets/DevJobs.png";
+import Tour from "../assets/Tour.png";
 
 function PortafolioMain() {
   return (
@@ -58,10 +60,10 @@ function PortafolioMain() {
                   <a href="#" aria-label="Discord">
                     <i className="bi bi-discord"></i>
                   </a>
-                  <a href="#" aria-label="Discord">
+                  <a href="#" aria-label="instagram">
                     <i className="bi bi-instagram"></i>
                   </a>
-                  <a href="#" aria-label="Discord">
+                  <a href="#" aria-label="github">
                     <i className="bi bi-github"></i>
                   </a>
                 </div>
@@ -86,7 +88,7 @@ function PortafolioMain() {
           </p>
 
           <div className="container mt-5">
-            <div className="row g-4">
+            <div className="row g-4 justify-content-around">
               <div className="col-12 col-md-6 col-lg-4">
                 <Card className="CardProyectos h-100 p-2">
                   <Card.Img
@@ -98,6 +100,9 @@ function PortafolioMain() {
 
                   <Card.Body className="d-flex flex-column">
                     <Card.Title>Sistema de gestión de turnos</Card.Title>
+                    <p>
+                      Estado: <span className="Finalizado p-1">Finalizado</span>
+                    </p>
 
                     <Card.Text>
                       Aplicación web para gestionar turnos de manera simple y
@@ -113,7 +118,7 @@ function PortafolioMain() {
                       <li>Json</li>
                     </ul>
 
-                   <a
+                    <a
                       className="mt-auto align-self-start btn btn-outline-primary"
                       target="_blank"
                       href="https://github.com/Matiassanchez18/SistemaDeTurnos"
@@ -136,6 +141,9 @@ function PortafolioMain() {
 
                   <Card.Body className="d-flex flex-column">
                     <Card.Title>ProyectoGammer</Card.Title>
+                    <p>
+                      Estado: <span className="Finalizado p-1">Finalizado</span>
+                    </p>
 
                     <Card.Text>
                       Consiste en el desarrollo de un sitio web que ofrece un
@@ -152,7 +160,7 @@ function PortafolioMain() {
                       <li>Json</li>
                     </ul>
 
-                     <a
+                    <a
                       className="mt-auto align-self-start btn btn-outline-primary"
                       target="_blank"
                       href="https://github.com/najr91/ProyectoGammer"
@@ -175,6 +183,9 @@ function PortafolioMain() {
 
                   <Card.Body className="d-flex flex-column">
                     <Card.Title>DeporTuc</Card.Title>
+                    <p>
+                      Estado: <span className="Finalizado p-1">Finalizado</span>
+                    </p>
 
                     <Card.Text>
                       Plataforma web orientada al ámbito deportivo, diseñada
@@ -195,6 +206,88 @@ function PortafolioMain() {
                       href="https://github.com/frantejerizo/Proyecto-DeporTuc"
                     >
                       Ir a GitHub
+                      <i className="bi bi-arrow-right ms-2"></i>
+                    </a>
+                  </Card.Body>
+                </Card>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4">
+                <Card className="CardProyectos h-100 p-2">
+                  <Card.Img
+                    variant="top"
+                    className="rounded"
+                    src={DevJobs}
+                    alt="Proyecto"
+                  />
+
+                  <Card.Body className="d-flex flex-column">
+                    <Card.Title>DevJobs</Card.Title>
+                    <p>
+                      Estado: <span className="EnProceso p-1">en proceso</span>
+                    </p>
+
+                    <Card.Text>
+                      Plataforma web de búsqueda de empleos orientada a
+                      desarrolladores, con filtros por tecnología y ubicación
+                      para encontrar oportunidades de trabajo de forma rápida y
+                      sencilla.
+                    </Card.Text>
+
+                    <ul className="ListaLenguajes">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                      <li>JavaScript</li>
+                    </ul>
+
+                    <a
+                      className="mt-auto align-self-start btn btn-outline-primary Desactivado"
+                      target="_blank"
+                      href="#"
+                      disable
+                    >
+                      Ir a GitHub
+                      <i className="bi bi-arrow-right ms-2"></i>
+                    </a>
+                  </Card.Body>
+                </Card>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4">
+                <Card className="CardProyectos h-100 p-2">
+                  <Card.Img
+                    variant="top"
+                    className="rounded"
+                    src={Tour}
+                    alt="Proyecto"
+                  />
+
+                  <Card.Body className="d-flex flex-column">
+                    <Card.Title>ARGENTINA ADVENTURE TOURS</Card.Title>
+                    <p>
+                      Estado: <span className="Finalizado p-1">Finalizado</span>
+                    </p>
+
+                    <Card.Text>
+                      Plataforma web de búsqueda de empleos orientada a
+                      desarrolladores, con filtros por tecnología y ubicación
+                      para encontrar oportunidades de trabajo de forma rápida y
+                      sencilla.
+                    </Card.Text>
+
+                    <ul className="ListaLenguajes">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                    </ul>
+
+                    <a
+                      className="mt-auto align-self-start btn btn-outline-primary"
+                      target="_blank"
+                      href="https://proyecto-tour-rollingcode.netlify.app/"
+                    >
+                      Ir a la pagina
                       <i className="bi bi-arrow-right ms-2"></i>
                     </a>
                   </Card.Body>

@@ -218,6 +218,20 @@
     transform: translateY(-2px);
 }
 
+.EnProceso{
+  background-color: rgba(185, 123, 7, 0.575);
+  border-radius: 10px;
+}
+.Finalizado{
+  background-color: rgba(17, 129, 17, 0.637);
+  border-radius: 10px;
+
+}
+
+.Desactivado{
+  pointer-events: none;
+}
+
 @media (max-width: 991px) {
   .HeroSection {
     min-height: auto;
