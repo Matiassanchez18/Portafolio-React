@@ -49,7 +49,7 @@ function PortafolioMain() {
                 <p className="textSecondary">Encontrame aquí</p>
 
                 <div className="IconosRedes">
-                  <a href="#" aria-label="Slack">
+                  <a href="https://join.slack.com/t/hola-lx04128/shared_invite/zt-497mplsr6-agif~DZ6oM6Y~enmv~3fHA" aria-label="Slack">
                     <i className="bi bi-slack"></i>
                   </a>
 
@@ -57,7 +57,7 @@ function PortafolioMain() {
                     <i className="bi bi-whatsapp"></i>
                   </a>
 
-                  <a href="#" aria-label="Discord">
+                  <a href="https://discord.gg/yhX7DPY3" aria-label="Discord">
                     <i className="bi bi-discord"></i>
                   </a>
                   <a href="#" aria-label="instagram">
