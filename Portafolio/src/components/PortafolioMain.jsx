@@ -1,5 +1,9 @@
 import "../css/MainPortafolio.css";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import foto from "../assets/SDT.png";
+import fotoGammer from "../assets/ProyectoGammer.png";
+import FotoDeporTuc from "../assets/DeporTuc.png";
 
 function PortafolioMain() {
   return (
@@ -57,6 +61,9 @@ function PortafolioMain() {
                   <a href="#" aria-label="Discord">
                     <i className="bi bi-instagram"></i>
                   </a>
+                  <a href="#" aria-label="Discord">
+                    <i className="bi bi-github"></i>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -70,7 +77,132 @@ function PortafolioMain() {
         </article>
       </section>
 
-      <section className="container Section">
+      <section className="border-top ">
+        <article className="container mt-5">
+          <h2>Proyectos & desarrollo</h2>
+          <p className="w-50">
+            Una selección de proyectos en los que puse en práctica mis
+            conocimientos de desarrollo web y programación.
+          </p>
+
+          <div className="container mt-5">
+            <div className="row g-4">
+              <div className="col-12 col-md-6 col-lg-4">
+                <Card className="CardProyectos h-100 p-2">
+                  <Card.Img
+                    variant="top"
+                    className="rounded"
+                    src={foto}
+                    alt="Sistema de gestión de turnos"
+                  />
+
+                  <Card.Body className="d-flex flex-column">
+                    <Card.Title>Sistema de gestión de turnos</Card.Title>
+
+                    <Card.Text>
+                      Aplicación web para gestionar turnos de manera simple y
+                      organizada, permitiendo administrar pacientes,
+                      profesionales y sus respectivas citas.
+                    </Card.Text>
+
+                    <ul className="ListaLenguajes">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                      <li>JavaScript</li>
+                      <li>Json</li>
+                    </ul>
+
+                   <a
+                      className="mt-auto align-self-start btn btn-outline-primary"
+                      target="_blank"
+                      href="https://github.com/Matiassanchez18/SistemaDeTurnos"
+                    >
+                      Ir a GitHub
+                      <i className="bi bi-arrow-right ms-2"></i>
+                    </a>
+                  </Card.Body>
+                </Card>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4">
+                <Card className="CardProyectos h-100 p-2">
+                  <Card.Img
+                    variant="top"
+                    className="rounded "
+                    src={fotoGammer}
+                    alt="Proyecto"
+                  />
+
+                  <Card.Body className="d-flex flex-column">
+                    <Card.Title>ProyectoGammer</Card.Title>
+
+                    <Card.Text>
+                      Consiste en el desarrollo de un sitio web que ofrece un
+                      catálogo de juegos para la venta, permitiendo a los
+                      usuarios administrar, visualizar y reseñar productos de
+                      manera interactiva.
+                    </Card.Text>
+
+                    <ul className="ListaLenguajes">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                      <li>JavaScript</li>
+                      <li>Json</li>
+                    </ul>
+
+                     <a
+                      className="mt-auto align-self-start btn btn-outline-primary"
+                      target="_blank"
+                      href="https://github.com/najr91/ProyectoGammer"
+                    >
+                      Ir a GitHub
+                      <i className="bi bi-arrow-right ms-2"></i>
+                    </a>
+                  </Card.Body>
+                </Card>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4">
+                <Card className="CardProyectos h-100 p-2">
+                  <Card.Img
+                    variant="top"
+                    className="rounded"
+                    src={FotoDeporTuc}
+                    alt="Proyecto"
+                  />
+
+                  <Card.Body className="d-flex flex-column">
+                    <Card.Title>DeporTuc</Card.Title>
+
+                    <Card.Text>
+                      Plataforma web orientada al ámbito deportivo, diseñada
+                      para facilitar la gestión y organización de actividades,
+                      ofreciendo una experiencia simple y accesible para los
+                      usuarios.
+                    </Card.Text>
+
+                    <ul className="ListaLenguajes">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                    </ul>
+
+                    <a
+                      className="mt-auto align-self-start btn btn-outline-primary"
+                      target="_blank"
+                      href="https://github.com/frantejerizo/Proyecto-DeporTuc"
+                    >
+                      Ir a GitHub
+                      <i className="bi bi-arrow-right ms-2"></i>
+                    </a>
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
     </>
   );

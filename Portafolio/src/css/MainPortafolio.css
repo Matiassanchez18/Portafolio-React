@@ -1,248 +1,296 @@
 :root {
-    --bg-primary: #080B12;
-    --bg-secondary: #0F1420;
-    --bg-card: #151C2B;
+  --bg-primary: #080b12;
+  --bg-secondary: #0f1420;
+  --bg-card: #151c2b;
 
-    --blue-primary: #2563EB;
-    --blue-light: #3B82F6;
+  --blue-primary: #2563eb;
+  --blue-light: #3b82f6;
 
-    --text-primary: #F1F5F9;
-    --text-secondary: #94A3B8;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
 
-    --border: #26334A;
+  --border: #26334a;
 }
 
 .HeroSection {
-    min-height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
 }
 
 .HeroSection article {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
 
 .ListaPresentacion {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-width: 650px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 650px;
 }
 
 .ListaPresentacion li {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 .TextoDestacado {
-    color: var(--blue-primary);
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
+  color: var(--blue-primary);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
 }
 
-
 .ListaPresentacion h1 {
-    color: var(--text-primary);
-    font-size: clamp(45px, 7vw, 80px);
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: -2px;
-    margin: 0 0 20px 0;
+  color: var(--text-primary);
+  font-size: clamp(45px, 7vw, 80px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin: 0 0 20px 0;
 
-    text-shadow: 0 0 25px rgba(37, 99, 235, 0.15);
+  text-shadow: 0 0 25px rgba(37, 99, 235, 0.15);
 }
 
 .TextoDestacado2 {
-    color: var(--blue-light);
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    padding-left: 15px;
-    border-left: 3px solid var(--blue-primary);
+  color: var(--blue-light);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  border-left: 3px solid var(--blue-primary);
 }
-
 
 .ListaPresentacion li:nth-last-child(2) {
-    color: var(--text-secondary);
-    font-size: 17px;
-    line-height: 1.8;
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.8;
 }
 
-
 .BotonHeader {
-    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
-    border: 1px solid #0d6efd;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+  border: 1px solid #0d6efd;
 
-    padding: 10px 20px;
-    border-radius: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
 
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .BotonHeader:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
 }
 .DivImg {
-    width: 420px;
-    height: 420px;
+  width: 420px;
+  height: 420px;
 
-    overflow: hidden;
-    border-radius: 20px;
+  overflow: hidden;
+  border-radius: 20px;
 
-    border: 1px solid var(--blue-primary);
+  border: 1px solid var(--blue-primary);
 
-    box-shadow: 0 0 30px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.15);
 
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .DivImg img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
-    display: block;
+  object-fit: cover;
+  display: block;
 }
 
-
 .textSecondary {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 .RedesSociales {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .RedesSociales p {
-    font-size: 15px;
-    margin-bottom: 12px;
-    letter-spacing: 0.5px;
+  font-size: 15px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
 
 .IconosRedes {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .IconosRedes a {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 
-    background-color: var(--bg-card);
+  background-color: var(--bg-card);
 
-    border: 1px solid var(--border);
-    border-radius: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .IconosRedes i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .IconosRedes a:hover {
-    color: var(--blue-light);
+  color: var(--blue-light);
+  border-color: var(--blue-primary);
+
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+
+  transform: translateY(-3px);
+}
+
+.CardProyectos {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+
+    img{
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+.CardProyectos:hover {
+    transform: translateY(-5px);
     border-color: var(--blue-primary);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+}
 
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+.CardProyectos .card-body {
+    background-color: var(--bg-card);
+}
 
-    transform: translateY(-3px);
+.CardProyectos .card-title {
+    color: var(--text-primary);
+}
+
+.CardProyectos .card-text {
+    color: var(--text-secondary);
+}
+.ListaLenguajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.ListaLenguajes li {
+    color: var(--text-secondary);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ListaLenguajes li:hover {
+    color: var(--text-primary);
+    border-color: var(--blue-primary);
+    background-color: rgba(37, 99, 235, 0.10);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 991px) {
+  .HeroSection {
+    min-height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-    .HeroSection {
-        min-height: auto;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+  .HeroSection article {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .HeroSection article {
-        flex-direction: column;
-        text-align: center;
-    }
+  .ListaPresentacion {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
-    .ListaPresentacion {
-        max-width: 700px;
-        margin: 0 auto;
-    }
+  .TextoDestacado2 {
+    border-left: none;
+    border-bottom: 3px solid var(--blue-primary);
 
-    .TextoDestacado2 {
-        border-left: none;
-        border-bottom: 3px solid var(--blue-primary);
+    display: inline-block;
 
-        display: inline-block;
+    padding-left: 0;
+    padding-bottom: 8px;
+  }
 
-        padding-left: 0;
-        padding-bottom: 8px;
-    }
+  .IconosRedes {
+    justify-content: center;
+  }
 
-    .IconosRedes {
-        justify-content: center;
-    }
-
-    .DivImg {
-        width: 320px;
-        height: 320px;
-    }
+  .DivImg {
+    width: 320px;
+    height: 320px;
+  }
 }
 
-
-/* =========================
-   CELULARES
-========================= */
-
 @media (max-width: 576px) {
+  .HeroSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-    .HeroSection {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+  .ListaPresentacion h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
 
-    .ListaPresentacion h1 {
-        font-size: 42px;
-        letter-spacing: -1px;
-    }
+  .TextoDestacado {
+    font-size: 16px;
+  }
 
-    .TextoDestacado {
-        font-size: 16px;
-    }
+  .TextoDestacado2 {
+    font-size: 17px;
+  }
 
-    .TextoDestacado2 {
-        font-size: 17px;
-    }
+  .ListaPresentacion li:nth-last-child(2) {
+    font-size: 15px;
+    line-height: 1.7;
+  }
 
-    .ListaPresentacion li:nth-last-child(2) {
-        font-size: 15px;
-        line-height: 1.7;
-    }
+  .DivImg {
+    width: 260px;
+    height: 260px;
+  }
 
-    .DivImg {
-        width: 260px;
-        height: 260px;
-    }
+  .BotonHeader {
+    margin: 5px !important;
+    padding: 9px 16px;
+  }
 
-    .BotonHeader {
-        margin: 5px !important;
-        padding: 9px 16px;
-    }
-
-    .IconosRedes a {
-        width: 42px;
-        height: 42px;
-    }
+  .IconosRedes a {
+    width: 42px;
+    height: 42px;
+  }
 }
