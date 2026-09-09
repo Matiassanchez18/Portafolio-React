@@ -355,21 +355,207 @@ function PortafolioMain() {
 
           <div className="d-flex justify-content-center">
             <div className="card-habilidades">
+              <div className="titulo-habilidad">
+                <div className="icono-habilidad">
+                  <i className="bi bi-code-slash"></i>
+                </div>
+                <div>
+                  <h2>FrontEnd</h2>
+                  <p>Tecnologías de desarrollo web</p>
+                </div>
+              </div>
+              <div className="habilidad">
+                <span className="nombre-habilidad">HTML</span>
 
-  <div className="habilidad">
-    <span className="nombre-habilidad">JavaScript</span>
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "85%" }}
+                  ></div>
+                </div>
 
-    <div className="BarraProgreso">
-      <div
-        className="progreso-porcentaje"
-        style={{ width: "75%" }}
-      ></div>
-    </div>
+                <span className="porcentaje">85%</span>
+              </div>
 
-    <span className="porcentaje">75%</span>
-  </div>
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">CSS</span>
 
-</div>
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "80%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">80%</span>
+              </div>
+
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">Bootstrap</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "80%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">80%</span>
+              </div>
+
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">JavaScript</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "75%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">75%</span>
+              </div>
+
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">React</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "65%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">65%</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="d-flex mt-4 justify-content-center">
+            <div className="card-habilidades">
+              <div className="titulo-habilidad">
+                <div className="icono-habilidad">
+                  <i className="bi bi-server"></i>
+                </div>
+                <div>
+                  <h2>Backend</h2>
+                  <p>Desarrollo de aplicaciones y APIs</p>
+                </div>
+              </div>
+              <div className="habilidad">
+                <span className="nombre-habilidad">C#</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "70%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">70%</span>
+              </div>
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">SQL</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "70%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">70%</span>
+              </div>
+
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">MySQL</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "70%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">70%</span>
+              </div>
+
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">REST APIs</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "65%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">65%</span>
+              </div>
+
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">Node.js</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "55%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">55%</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="d-flex mt-4 justify-content-center">
+            <div className="card-habilidades">
+              <div className="titulo-habilidad">
+                <div className="icono-habilidad">
+                  <i className="bi bi-tools"></i>
+                </div>
+                <div>
+                  <h2>Herramientas</h2>
+                  <p>Herramientas y metodologías de trabajo</p>
+                </div>
+              </div>
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">VS Code</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "85%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">85%</span>
+              </div>
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">Git</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "75%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">75%</span>
+              </div>
+              <div className="habilidad mt-4">
+                <span className="nombre-habilidad">GitHub</span>
+
+                <div className="BarraProgreso">
+                  <div
+                    className="progreso-porcentaje"
+                    style={{ width: "75%" }}
+                  ></div>
+                </div>
+
+                <span className="porcentaje">75%</span>
+              </div>
+            </div>
           </div>
         </article>
       </section>
