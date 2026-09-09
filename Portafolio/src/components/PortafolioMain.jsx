@@ -6,6 +6,7 @@ import fotoGammer from "../assets/ProyectoGammer.png";
 import FotoDeporTuc from "../assets/DeporTuc.png";
 import DevJobs from "../assets/DevJobs.png";
 import Tour from "../assets/Tour.png";
+import Gato from "./Gato.jsx";
 
 function PortafolioMain() {
   return (
@@ -21,6 +22,7 @@ function PortafolioMain() {
                 <h1>Sanchez Matias</h1>
               </li>
               <li className="TextoDestacado2">
+                c
                 <p>
                   Estudiante de Programación · Full Stack Developer en formación
                 </p>
@@ -49,21 +51,24 @@ function PortafolioMain() {
                 <p className="textSecondary">Encontrame aquí</p>
 
                 <div className="IconosRedes">
-                  <a href="https://join.slack.com/t/hola-lx04128/shared_invite/zt-497mplsr6-agif~DZ6oM6Y~enmv~3fHA" aria-label="Slack">
+                  <a
+                    href="https://join.slack.com/t/hola-lx04128/shared_invite/zt-497mplsr6-agif~DZ6oM6Y~enmv~3fHA"
+                    aria-label="Slack"
+                  >
                     <i className="bi bi-slack"></i>
                   </a>
 
-                  <a href="#" aria-label="WhatsApp">
+                  <a href="https://wa.me/3816395008" aria-label="WhatsApp">
                     <i className="bi bi-whatsapp"></i>
                   </a>
 
                   <a href="https://discord.gg/yhX7DPY3" aria-label="Discord">
                     <i className="bi bi-discord"></i>
                   </a>
-                  <a href="#" aria-label="instagram">
-                    <i className="bi bi-instagram"></i>
-                  </a>
-                  <a href="#" aria-label="github">
+                  <a
+                    href="https://github.com/Matiassanchez18"
+                    aria-label="github"
+                  >
                     <i className="bi bi-github"></i>
                   </a>
                 </div>
@@ -75,6 +80,44 @@ function PortafolioMain() {
               src="https://images.pexels.com/photos/7988089/pexels-photo-7988089.jpeg"
               alt=""
             />
+          </div>
+        </article>
+      </section>
+
+      <section className="border-top p-5 SobreMi">
+        <article className="container">
+          <div className="row align-items-center">
+            <div className="col-md-5 text-center">
+              <Gato />
+            </div>
+
+            <div className="col-md-7">
+              <span className="sobre-tag">SOBRE MÍ</span>
+
+              <h2>
+                Un poco sobre <span>mí</span>
+              </h2>
+
+              <p>
+                Soy Matías Sánchez, estudiante de Programación en la UTN y
+                desarrollador Full Stack en formación. Me interesa crear
+                aplicaciones web modernas, funcionales y con una buena
+                experiencia para el usuario.
+              </p>
+
+              <p>
+                Empecé a interesarme por la programación en 2022 durante mi cursado en la secundaria y desde
+                entonces fui aprendiendo distintas tecnologías a través de
+                cursos y proyectos personales y académicos.
+              </p>
+
+              <p>
+                Actualmente estoy enfocado en seguir mejorando mis conocimientos
+                en JavaScript, React, Node.js, C# y bases de datos, mientras
+                busco mi primera experiencia profesional dentro del mundo del
+                desarrollo.
+              </p>
+            </div>
           </div>
         </article>
       </section>
