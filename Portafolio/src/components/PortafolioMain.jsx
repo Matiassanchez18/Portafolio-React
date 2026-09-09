@@ -99,16 +99,17 @@ function PortafolioMain() {
               </h2>
 
               <p>
-                Soy Matías Sánchez, estudiante de Programación en la UTN y
-                desarrollador Full Stack en formación. Me interesa crear
-                aplicaciones web modernas, funcionales y con una buena
-                experiencia para el usuario.
+                Soy <span className="TextoDestacado">Matias Sánchez</span>,
+                estudiante de Programación en la UTN y desarrollador Full Stack
+                en formación. Me interesa crear aplicaciones web modernas,
+                funcionales y con una buena experiencia para el usuario.
               </p>
 
               <p>
-                Empecé a interesarme por la programación en 2022 durante mi cursado en la secundaria y desde
-                entonces fui aprendiendo distintas tecnologías a través de
-                cursos y proyectos personales y académicos.
+                Empecé a interesarme por la programación en 2022 durante mi
+                cursado en la secundaria y desde entonces fui aprendiendo
+                distintas tecnologías a través de cursos y proyectos personales
+                y académicos.
               </p>
 
               <p>
@@ -338,6 +339,39 @@ function PortafolioMain() {
               </div>
             </div>
           </div>
+        </article>
+      </section>
+
+      <section className="mt-5 border-top p-5">
+        <article className="container">
+          <div className="text-center">
+            <span>Mis Habilidades</span>
+            <h2>Skills & tecnologias</h2>
+            <p>
+              Tecnologías y herramientas que utilizo para desarrollar proyectos
+              y seguir creciendo como desarrollador.
+            </p>
+          </div>
+
+         <div className="d-flex justify-content-center">
+  <div className="card-habilidades">
+
+    <div className="habilidades">
+      <div className="habilidades-info">
+        <span>JavaScript</span>
+        <span>75%</span>
+      </div>
+
+      <div className="BarraProgreso">
+        <div
+          className="progreso-porcentaje"
+          style={{ width: "75%" }}
+        ></div>
+      </div>
+    </div>
+
+  </div>
+</div>
         </article>
       </section>
     </>
