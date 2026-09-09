@@ -1,0 +1,472 @@
+:root {
+  --bg-primary: #080b12;
+  --bg-secondary: #0f1420;
+  --bg-card: #151c2b;
+
+  --blue-primary: #2563eb;
+  --blue-light: #3b82f6;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+
+  --border: #26334a;
+}
+
+.HeroSection {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.HeroSection article {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.ListaPresentacion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 650px;
+}
+
+.ListaPresentacion li {
+  color: var(--text-secondary);
+}
+
+.TextoDestacado {
+  color: var(--blue-primary);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.ListaPresentacion h1 {
+  color: var(--text-primary);
+  font-size: clamp(45px, 7vw, 80px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin: 0 0 20px 0;
+
+  text-shadow: 0 0 25px rgba(37, 99, 235, 0.15);
+}
+
+.TextoDestacado2 {
+  color: var(--blue-light);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  border-left: 3px solid var(--blue-primary);
+}
+
+.ListaPresentacion li:nth-last-child(2) {
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.BotonHeader {
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+  border: 1px solid #0d6efd;
+
+  padding: 10px 20px;
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+}
+
+.BotonHeader:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+.DivImg {
+  width: 420px;
+  height: 420px;
+
+  overflow: hidden;
+  border-radius: 20px;
+
+  border: 1px solid var(--blue-primary);
+
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.15);
+
+  flex-shrink: 0;
+}
+
+.DivImg img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+.textSecondary {
+  color: var(--text-secondary);
+}
+
+.RedesSociales {
+  margin-top: 30px;
+}
+
+.RedesSociales p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.IconosRedes {
+  display: flex;
+  gap: 12px;
+}
+
+.IconosRedes a {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-secondary);
+
+  background-color: var(--bg-card);
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.IconosRedes i {
+  font-size: 20px;
+}
+
+.IconosRedes a:hover {
+  color: var(--blue-light);
+  border-color: var(--blue-primary);
+
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+
+  transform: translateY(-3px);
+}
+
+.SobreMi {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.SobreMi h2 {
+  font-size: 2.8rem;
+  margin: 10px 0 25px;
+}
+
+.SobreMi h2 span {
+  color: var(--blue-primary);
+}
+
+.SobreMi p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.sobre-tag {
+  color: var(--blue-light);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.badge-tech {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 5px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  background-color: var(--bg-card);
+  font-size: 0.85rem;
+}
+
+.CardProyectos {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s ease;
+
+  img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.CardProyectos:hover {
+  transform: translateY(-5px);
+  border-color: var(--blue-primary);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+}
+
+.CardProyectos .card-body {
+  background-color: var(--bg-card);
+}
+
+.CardProyectos .card-title {
+  color: var(--text-primary);
+}
+
+.CardProyectos .card-text {
+  color: var(--text-secondary);
+}
+.ListaLenguajes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.ListaLenguajes li {
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ListaLenguajes li:hover {
+  color: var(--text-primary);
+  border-color: var(--blue-primary);
+  background-color: rgba(37, 99, 235, 0.1);
+  transform: translateY(-2px);
+}
+
+.EnProceso {
+  background-color: rgba(185, 123, 7, 0.575);
+  border-radius: 10px;
+}
+.Finalizado {
+  background-color: rgba(17, 129, 17, 0.637);
+  border-radius: 10px;
+}
+
+.Desactivado {
+  pointer-events: none;
+}
+.SeccionSkills {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.TextoSkills h2 {
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+}
+
+.TextoSkills p {
+  color: var(--text-secondary);
+  margin: 0 auto;
+}
+
+.EtiquetaSkills {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  color: var(--blue-light);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.card-habilidades {
+  padding: 30px;
+
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  transition: all 0.3s ease;
+}
+
+.card-habilidades:hover {
+  transform: translateY(-6px);
+  border-color: var(--blue-primary);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+}
+
+.titulo-habilidad {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.icono-habilidad {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--blue-light);
+  font-size: 1.4rem;
+
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  border-radius: 12px;
+}
+
+.titulo-habilidad h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  color: var(--text-primary);
+}
+
+.titulo-habilidad p {
+  margin: 4px 0 0;
+
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+}
+
+.habilidad {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.habilidad:last-child {
+  margin-bottom: 0;
+}
+
+.nombre-habilidad {
+  width: 90px;
+
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.BarraProgreso {
+  flex: 1;
+  height: 7px;
+
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.progreso-porcentaje {
+  height: 100%;
+
+  background-color: var(--blue-primary);
+  border-radius: 10px;
+
+  transition: width 1s ease;
+}
+
+.porcentaje {
+  width: 38px;
+
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .HeroSection {
+    min-height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .HeroSection article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ListaPresentacion {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .TextoDestacado2 {
+    border-left: none;
+    border-bottom: 3px solid var(--blue-primary);
+
+    display: inline-block;
+
+    padding-left: 0;
+    padding-bottom: 8px;
+  }
+
+  .IconosRedes {
+    justify-content: center;
+  }
+
+  .DivImg {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .HeroSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .ListaPresentacion h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .TextoDestacado {
+    font-size: 16px;
+  }
+
+  .TextoDestacado2 {
+    font-size: 17px;
+  }
+
+  .ListaPresentacion li:nth-last-child(2) {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .DivImg {
+    width: 260px;
+    height: 260px;
+  }
+
+  .BotonHeader {
+    margin: 5px !important;
+    padding: 9px 16px;
+  }
+
+  .IconosRedes a {
+    width: 42px;
+    height: 42px;
+  }
+}

@@ -1,35 +1,40 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "../css/Header.css";
-import foto from "../assets/LogoMSportafolio.png";
 import Button from "react-bootstrap/Button";
+import "../css/Header.css";
 
 function Header() {
   return (
-    <>
-      <Navbar className="NavHeader p-3">
-        <div className="d-flex align-items-center w-100 position-relative">
-          <div>
-            <img src={foto} alt="" />
-            <Navbar.Brand href="#home" className="nombre">
-              Matias Sanchez
-            </Navbar.Brand>
-          </div>
-
-          <div className="position-absolute start-50 translate-middle-x">
-            <Nav>
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-          </div>
-
-          <div className="ms-auto">
-            <Button variant="outline-primary">Primary</Button>
-          </div>
+    <Navbar expand="lg" className="NavHeader p-3">
+      <Navbar.Brand href="#home" className="nombre">
+        <div>
+          Matias Sanchez
+          <p className="profesion">Programador</p>
         </div>
-      </Navbar>
-    </>
+      </Navbar.Brand>
+
+      <Navbar.Toggle aria-controls="navbar-nav" />
+
+      <Navbar.Collapse id="navbar-nav">
+        <Nav className="mx-auto">
+          <Nav.Link href="#home" className="active">
+            Inicio
+          </Nav.Link>
+
+          <Nav.Link href="#features" className="mx-lg-4">
+            Sobre mí
+          </Nav.Link>
+
+          <Nav.Link href="#pricing">
+            Contacto
+          </Nav.Link>
+        </Nav>
+
+        <Button className="BotonHeader" variant="outline-primary">
+          Trabajemos juntos
+        </Button>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
