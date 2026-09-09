@@ -342,7 +342,7 @@ function PortafolioMain() {
         </article>
       </section>
 
-      <section className="SeccionSkills py-5">
+      <section className="SeccionSkills py-5 mt-5 border-top">
         <div className="container">
           <div className="TextoSkills text-center mb-5">
             <span className="EtiquetaSkills">MIS HABILIDADES</span>
