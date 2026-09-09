@@ -280,28 +280,37 @@
   border-radius: 15px;
 }
 
-.habilidades {
-  width: 100%;
-  margin-bottom: 25px;
-}
-.habilidades-info {
+.habilidad {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
+  align-items: center;
+  gap: 15px;
+}
+
+.nombre-habilidad {
+  width: 100px;
   color: var(--text-primary);
   font-weight: 500;
 }
+
 .BarraProgreso {
-  width: 100%;
+  flex: 1;
   height: 8px;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secondary);
   border-radius: 10px;
   overflow: hidden;
 }
+
 .progreso-porcentaje {
   height: 100%;
   background-color: var(--blue-primary);
   border-radius: 10px;
+}
+
+.porcentaje {
+  width: 40px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-align: right;
 }
 
 @media (max-width: 991px) {

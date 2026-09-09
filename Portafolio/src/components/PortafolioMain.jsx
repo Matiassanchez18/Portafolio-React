@@ -353,25 +353,24 @@ function PortafolioMain() {
             </p>
           </div>
 
-         <div className="d-flex justify-content-center">
-  <div className="card-habilidades">
+          <div className="d-flex justify-content-center">
+            <div className="card-habilidades">
 
-    <div className="habilidades">
-      <div className="habilidades-info">
-        <span>JavaScript</span>
-        <span>75%</span>
-      </div>
+  <div className="habilidad">
+    <span className="nombre-habilidad">JavaScript</span>
 
-      <div className="BarraProgreso">
-        <div
-          className="progreso-porcentaje"
-          style={{ width: "75%" }}
-        ></div>
-      </div>
+    <div className="BarraProgreso">
+      <div
+        className="progreso-porcentaje"
+        style={{ width: "75%" }}
+      ></div>
     </div>
 
+    <span className="porcentaje">75%</span>
   </div>
+
 </div>
+          </div>
         </article>
       </section>
     </>
