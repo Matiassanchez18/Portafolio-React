@@ -4,7 +4,7 @@ function Contactos() {
   return (
     <div>
 
-<section id="contacto" className="SeccionContacto">
+<section id="Contacto" className="SeccionContacto">
   <div className="container">
 
     <span className="EtiquetaSkills">

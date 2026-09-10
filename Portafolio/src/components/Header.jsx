@@ -21,18 +21,18 @@ function Header() {
             Inicio
           </Nav.Link>
 
-          <Nav.Link href="#features" className="mx-lg-4">
+          <Nav.Link href="#SobreMi" className="mx-lg-4">
             Sobre mí
           </Nav.Link>
 
-          <Nav.Link href="#pricing">
+          <Nav.Link href="#Contacto">
             Contacto
           </Nav.Link>
         </Nav>
 
-        <Button className="BotonHeader" variant="outline-primary">
+        <a className="BotonHeader btn btn-outline-primary" href="#Contacto">
           Trabajemos juntos
-        </Button>
+        </a>
       </Navbar.Collapse>
     </Navbar>
   );

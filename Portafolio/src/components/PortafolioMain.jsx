@@ -38,12 +38,13 @@ function PortafolioMain() {
                 ideas en soluciones digitales.
               </li>
               <li className="mt-4">
-                <Button
-                  className="BotonHeader me-5  "
+                <a
+                  className="BotonHeader me-5 btn btn-outline-primary "
                   variant="outline-primary"
+                  href="#Proyecto"
                 >
                   Mirá mis trabajos <i className="bi bi-arrow-right"></i>
-                </Button>
+                </a>
                 <Button className="BotonHeader " variant="primary">
                   mas sobre mí <i className="bi bi-arrow-right"></i>
                 </Button>
@@ -85,7 +86,7 @@ function PortafolioMain() {
         </article>
       </section>
 
-      <section className="border-top p-5 SobreMi">
+      <section className="border-top p-5 SobreMi" id="SobreMi">
         <article className="container">
           <div className="row align-items-center">
             <div className="col-md-5 text-center">
@@ -100,7 +101,7 @@ function PortafolioMain() {
               </h2>
 
               <p>
-                Soy <span className="TextoDestacado">Matias Sánchez</span>,
+                Soy <span className="TextoDestacado" >Matias Sánchez</span>,
                 estudiante de Programación en la UTN y desarrollador Full Stack
                 en formación. Me interesa crear aplicaciones web modernas,
                 funcionales y con una buena experiencia para el usuario.
@@ -132,7 +133,7 @@ function PortafolioMain() {
             conocimientos de desarrollo web y programación.
           </p>
 
-          <div className="container mt-5">
+          <div className="container mt-5" id="Proyecto">
             <div className="row g-4 justify-content-around">
               <div className="col-12 col-md-6 col-lg-4">
                 <Card className="CardProyectos h-100 p-2">
