@@ -18,7 +18,7 @@ function PortafolioMain() {
           <div>
             <ul className="ListaPresentacion">
               <li>
-                <p className="TextoDestacado" >Hola, soy</p>
+                <p className="TextoDestacado">Hola, soy</p>
               </li>
               <li>
                 <h1>Sanchez Matias</h1>
@@ -45,9 +45,14 @@ function PortafolioMain() {
                 >
                   Mirá mis trabajos <i className="bi bi-arrow-right"></i>
                 </a>
-                <Button className="BotonHeader " variant="primary">
+                <a
+                  className="BotonHeader btn btn-primary "
+                  href="./assets/cv.matias.pdf"
+                  download="cv-matias.pdf"
+                  variant="primary"
+                >
                   mas sobre mí <i className="bi bi-arrow-right"></i>
-                </Button>
+                </a>
               </li>
               <li className="mt-4 RedesSociales">
                 <p className="textSecondary">Encontrame aquí</p>
@@ -101,7 +106,7 @@ function PortafolioMain() {
               </h2>
 
               <p>
-                Soy <span className="TextoDestacado" >Matias Sánchez</span>,
+                Soy <span className="TextoDestacado">Matias Sánchez</span>,
                 estudiante de Programación en la UTN y desarrollador Full Stack
                 en formación. Me interesa crear aplicaciones web modernas,
                 funcionales y con una buena experiencia para el usuario.
@@ -572,9 +577,8 @@ function PortafolioMain() {
         </div>
       </section>
 
-      <Contactos ></Contactos>
+      <Contactos></Contactos>
       <Footer></Footer>
-      
     </>
   );
 }
