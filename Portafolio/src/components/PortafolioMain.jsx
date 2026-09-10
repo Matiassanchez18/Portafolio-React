@@ -23,7 +23,6 @@ function PortafolioMain() {
                 <h1>Sanchez Matias</h1>
               </li>
               <li className="TextoDestacado2">
-                c
                 <p>
                   Estudiante de Programación · Full Stack Developer en formación
                 </p>
