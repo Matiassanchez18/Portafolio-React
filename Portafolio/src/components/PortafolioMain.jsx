@@ -343,7 +343,7 @@ function PortafolioMain() {
         </article>
       </section>
 
-      <section className="SeccionSkills py-5 mt-5 border-top">
+      <section className="SeccionSkills mb-5 py-5  mt-5 border-top">
         <div className="container">
           <div className="TextoSkills text-center mb-5">
             <span className="EtiquetaSkills">MIS HABILIDADES</span>
@@ -553,7 +553,7 @@ function PortafolioMain() {
                   <span className="porcentaje">75%</span>
                 </div>
 
-                <div className="habilidad">
+                <div className="habilidad mb-5">
                   <span className="nombre-habilidad">GitHub</span>
 
                   <div className="BarraProgreso">
@@ -571,7 +571,7 @@ function PortafolioMain() {
         </div>
       </section>
 
-      <Contactos></Contactos>
+      <Contactos ></Contactos>
     </>
   );
 }
