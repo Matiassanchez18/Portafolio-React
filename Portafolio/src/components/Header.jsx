@@ -9,7 +9,7 @@ function Header() {
       <Navbar.Brand href="#home" className="nombre">
         <div>
           Matias Sanchez
-          <p className="profesion">Programador</p>
+          <p className="profesion" id="inicio">Programador</p>
         </div>
       </Navbar.Brand>
 

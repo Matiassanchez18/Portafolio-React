@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .PiePagina {
   padding: 40px 0 25px;
   background-color: var(--bg-primary);
@@ -63,6 +67,34 @@
 .CopyrightFooter i {
   color: var(--blue-light);
 } 
+
+.FlechaArriba {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 15px;
+
+  color: var(--text-secondary);
+  background-color: var(--bg-card);
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.FlechaArriba:hover {
+  color: var(--text-primary);
+  border-color: var(--blue-primary);
+  transform: translateY(-3px);
+}
+
 @media (max-width: 576px) {
   .ContenidoFooter {
     flex-direction: column;
