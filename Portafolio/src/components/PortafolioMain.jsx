@@ -1,6 +1,7 @@
 import "../css/MainPortafolio.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import Contactos from "./Contactos.jsx";
 import foto from "../assets/SDT.png";
 import fotoGammer from "../assets/ProyectoGammer.png";
 import FotoDeporTuc from "../assets/DeporTuc.png";
@@ -569,6 +570,8 @@ function PortafolioMain() {
           </div>
         </div>
       </section>
+
+      <Contactos></Contactos>
     </>
   );
 }
