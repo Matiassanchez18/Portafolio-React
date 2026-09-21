@@ -16,6 +16,7 @@ function Inicio() {
       descripcion:
         "Aplicación web para gestionar turnos de manera simple y organizada, permitiendo administrar pacientes, profesionales y sus respectivas citas",
       tecnologias: ["HTML", "CSS", "Bootstrap", "Json", "JavaScript"],
+      link:"https://github.com/Matiassanchez18/SistemaDeTurnos"
     },
     {
       img: `./ProyectoGammer.png`,
@@ -24,6 +25,7 @@ function Inicio() {
       descripcion:
         "Consiste en el desarrollo de un sitio web que ofrece un catálogo de juegos para la venta, permitiendo a los usuarios administrar, visualizar y reseñar productos de manera interactiva.",
       tecnologias: ["HTML", "CSS", "Bootstrap", "Json", "JavaScript"],
+      link:"https://github.com/najr91/ProyectoGammer"
     },
     {
       img: `./DeporTuc.png`,
@@ -32,6 +34,7 @@ function Inicio() {
       descripcion:
         "Plataforma web orientada al ámbito deportivo, diseñada para facilitar la gestión y organización de actividades, ofreciendo una experiencia simple y accesible para los usuarios.",
       tecnologias: ["HTML", "CSS", "Bootstrap"],
+      link:"https://github.com/frantejerizo/Proyecto-DeporTuc"
     },
     {
       img: `./DevJobs.png`,
@@ -40,6 +43,7 @@ function Inicio() {
       descripcion:
         "Plataforma web de búsqueda de empleos orientada a desarrolladores, con filtros por tecnología y ubicación para encontrar oportunidades de trabajo de forma rápida y sencilla.",
       tecnologias: ["HTML", "CSS", "Bootstrap","JavaScript"],
+      link:""
     },
     {
       img: `./Tour.png`,
@@ -48,12 +52,13 @@ function Inicio() {
       descripcion:
         "Plataforma web de búsqueda de empleos orientada a desarrolladores, con filtros por tecnología y ubicación para encontrar oportunidades de trabajo de forma rápida y sencilla.",
       tecnologias: ["HTML", "CSS"],
+      link:"https://proyecto-tour-rollingcode.netlify.app/"
     }
   ];
   return (
     <>
       <Header ></Header>
-      <PortafolioMain Matias={Matias} Proyectos={Proyectos}></PortafolioMain>
+      <PortafolioMain Matias={Matias} MisProyectos={Proyectos}></PortafolioMain>
     </>
   );
 }

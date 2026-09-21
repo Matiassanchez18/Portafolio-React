@@ -5,9 +5,9 @@ import DevJobs from "../assets/DevJobs.png";
 import Tour from "../assets/Tour.png";
 import Card from "react-bootstrap/Card";
 
-function Proyectos(){
-    return(
-        <>
+function Proyectos({ Proyectos }) {
+  return (
+    <>
       <section className="border-top ">
         <article className="container mt-5">
           <h2>Proyectos & desarrollo</h2>
@@ -18,7 +18,7 @@ function Proyectos(){
 
           <div className="container mt-5" id="Proyecto">
             <div className="row g-4 justify-content-around">
-              <div className="col-12 col-md-6 col-lg-4">
+              {/* <div className="col-12 col-md-6 col-lg-4">
                 <Card className="CardProyectos h-100 p-2">
                   <Card.Img
                     variant="top"
@@ -221,13 +221,52 @@ function Proyectos(){
                     </a>
                   </Card.Body>
                 </Card>
-              </div>
+              </div> */}
+              {Proyectos.map((proyecto) => (
+                <div className="col-12 col-md-6 col-lg-4">
+                  <Card className="CardProyectos h-100 p-2">
+                    <Card.Img
+                      variant="top"
+                      className="rounded"
+                      src={proyecto.img}
+                      alt="Sistema de gestión de turnos"
+                    />
+
+                    <Card.Body className="d-flex flex-column">
+                      <Card.Title>{proyecto.titulo}</Card.Title>
+                      <p>
+                        Estado:{" "}
+                        <span className="Finalizado p-1">
+                          {proyecto.estado}
+                        </span>
+                      </p>
+
+                      <Card.Text>{proyecto.descripcion}</Card.Text>
+
+                      <ul className="ListaLenguajes">
+                        {proyecto.tecnologias.map((tecnologia)=>
+                        <li>{tecnologia}</li>
+                        )}
+                      
+                      </ul>
+
+                      <a
+                        className="mt-auto align-self-start btn btn-outline-primary"
+                        target="_blank"
+                        href={proyecto.link}
+                      >
+                        Ir a GitHub
+                        <i className="bi bi-arrow-right ms-2"></i>
+                      </a>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
             </div>
           </div>
         </article>
       </section>
-
-        </>
-    )
+    </>
+  );
 }
-export default Proyectos
+export default Proyectos;
