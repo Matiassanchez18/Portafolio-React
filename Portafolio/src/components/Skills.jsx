@@ -1,7 +1,7 @@
-function Skills(){
-    return(
-        <>
-              <section className="SeccionSkills mb-5 py-5  mt-5 border-top">
+function Skills() {
+  return (
+    <>
+      <section className="SeccionSkills mb-5 py-5  mt-5 border-top">
         <div className="container">
           <div className="TextoSkills text-center mb-5">
             <span className="EtiquetaSkills">MIS HABILIDADES</span>
@@ -228,7 +228,7 @@ function Skills(){
           </div>
         </div>
       </section>
-        </>
-    )
+    </>
+  );
 }
-export default Skills
+export default Skills;

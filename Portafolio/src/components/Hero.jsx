@@ -1,4 +1,5 @@
-function Hero(){
+function Hero(props){
+  const {nombre,apellido,profesion}=props.Matias
     return(
         <>
          <section className="container mb-5 HeroSection">
@@ -9,11 +10,11 @@ function Hero(){
                 <p className="TextoDestacado">Hola, soy</p>
               </li>
               <li>
-                <h1>Sanchez Matias</h1>
+                <h1>{nombre} {apellido}</h1>
               </li>
               <li className="TextoDestacado2">
                 <p>
-                  Estudiante de Programación · Full Stack Developer en formación
+                  {profesion}
                 </p>
               </li>
               <li>

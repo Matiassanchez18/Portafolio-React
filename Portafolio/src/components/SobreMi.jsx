@@ -1,10 +1,11 @@
 import Gato from "./Gato.jsx";
 
+function SobreMi(props) {
 
-function SobreMi(){
-    return(
-        <>
-         <section className="border-top p-5 SobreMi" id="SobreMi">
+  const { nombre, apellido, profesion } = props.Matias;
+  return (
+    <>
+      <section className="border-top p-5 SobreMi" id="SobreMi">
         <article className="container">
           <div className="row align-items-center">
             <div className="col-md-5 text-center">
@@ -19,9 +20,11 @@ function SobreMi(){
               </h2>
 
               <p>
-                Soy <span className="TextoDestacado">Matias Sánchez</span>,
-                estudiante de Programación en la UTN y desarrollador Full Stack
-                en formación. Me interesa crear aplicaciones web modernas,
+                Soy{" "}
+                <span className="TextoDestacado">
+                  {nombre} {apellido}
+                </span>
+                , {profesion}. Me interesa crear aplicaciones web modernas,
                 funcionales y con una buena experiencia para el usuario.
               </p>
 
@@ -42,8 +45,8 @@ function SobreMi(){
           </div>
         </article>
       </section>
-        </>
-    )
+    </>
+  );
 }
 
-export default SobreMi
+export default SobreMi;
