@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import PortafolioMain from "../components/PortafolioMain";
+import Footer from "../components/Footer";
 
 function Inicio() {
   const Matias = {
@@ -59,6 +60,7 @@ function Inicio() {
     <>
       <Header ></Header>
       <PortafolioMain Matias={Matias} MisProyectos={Proyectos}></PortafolioMain>
+      <Footer></Footer>
     </>
   );
 }
