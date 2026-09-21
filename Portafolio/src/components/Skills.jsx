@@ -1,4 +1,84 @@
+import { useState } from "react";
+
 function Skills() {
+  let contenido;
+  const [oculto, setOculto] = useState(true);
+
+  const handleSkills = () => {
+    setOculto(!oculto);
+  };
+
+    if (!oculto) {
+    contenido = (
+                 <div className="col-12 col-md-10 col-lg-4">
+              <div className="card-habilidades h-100">
+                <div className="titulo-habilidad">
+                  <div className="icono-habilidad">
+                    <i className="bi bi-server"></i>
+                  </div>
+
+                  <div>
+                    <h2>Otras habilidades</h2>
+                    <p>Un poco mas sobre mis habilidades</p>
+                  </div>
+                </div>
+
+                <div className="habilidad">
+                  <span className="nombre-habilidad">Ingles</span>
+
+                  <div className="BarraProgreso">
+                    <div
+                      className="progreso-porcentaje"
+                      style={{ width: "80%" }}
+                    ></div>
+                  </div>
+
+                  <span className="porcentaje">80%</span>
+                </div>
+
+                <div className="habilidad">
+                  <span className="nombre-habilidad">Comunicación</span>
+
+                  <div className="BarraProgreso">
+                    <div
+                      className="progreso-porcentaje"
+                      style={{ width: "60%" }}
+                    ></div>
+                  </div>
+
+                  <span className="porcentaje">60%</span>
+                </div>
+
+                <div className="habilidad">
+                  <span className="nombre-habilidad">Resolución de problemas</span>
+
+                  <div className="BarraProgreso">
+                    <div
+                      className="progreso-porcentaje"
+                      style={{ width: "80%" }}
+                    ></div>
+                  </div>
+
+                  <span className="porcentaje">80%</span>
+                </div>
+
+                <div className="habilidad">
+                  <span className="nombre-habilidad">Adaptabilidad</span>
+
+                  <div className="BarraProgreso">
+                    <div
+                      className="progreso-porcentaje"
+                      style={{ width: "70%" }}
+                    ></div>
+                  </div>
+
+                  <span className="porcentaje">70%</span>
+                </div>
+
+              </div>
+            </div>
+    );
+  }
   return (
     <>
       <section className="SeccionSkills mb-5 py-5  mt-5 border-top">
@@ -10,7 +90,6 @@ function Skills() {
 
             <p>Tecnologías y herramientas con las que trabajo actualmente.</p>
           </div>
-
           <div className="row g-4 justify-content-center">
             <div className="col-12 col-md-10 col-lg-4">
               <div className="card-habilidades h-100">
@@ -225,7 +304,18 @@ function Skills() {
                 </div>
               </div>
             </div>
+
+            {contenido}
           </div>
+        </div>
+
+        <div>
+          <button
+            onClick={handleSkills}
+            className="d-flex mx-auto align-self-start btn btn-outline-primary mt-5 "
+            >
+            {oculto ? "ver mas": "ver menos"}
+          </button>
         </div>
       </section>
     </>
