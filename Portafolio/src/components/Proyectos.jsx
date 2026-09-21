@@ -17,8 +17,8 @@ function Proyectos({ Proyectos }) {
           </p>
           <div className="container mt-5" id="Proyecto">
             <div className="row g-4 justify-content-around">
-              {Proyectos.map((proyecto) => (
-                <div className="col-12 col-md-6 col-lg-4">
+              {Proyectos.map((proyecto,index) => (
+                <div className="col-12 col-md-6 col-lg-4" key={index}>
                   <Card className="CardProyectos h-100 p-2">
                     <Card.Img
                       variant="top"
@@ -45,8 +45,8 @@ function Proyectos({ Proyectos }) {
                       <Card.Text>{proyecto.descripcion}</Card.Text>
 
                       <ul className="ListaLenguajes">
-                        {proyecto.tecnologias.map((tecnologia) => (
-                          <li>{tecnologia}</li>
+                        {proyecto.tecnologias.map((tecnologia,index) => (
+                          <li key={index}>{tecnologia}</li>
                         ))}
                       </ul>
                       <a

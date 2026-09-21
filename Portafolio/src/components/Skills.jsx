@@ -74,6 +74,18 @@ function Skills() {
 
                   <span className="porcentaje">70%</span>
                 </div>
+                <div className="habilidad">
+                  <span className="nombre-habilidad">Responsabilidad</span>
+
+                  <div className="BarraProgreso">
+                    <div
+                      className="progreso-porcentaje"
+                      style={{ width: "90%" }}
+                    ></div>
+                  </div>
+
+                  <span className="porcentaje">90%</span>
+                </div>
 
               </div>
             </div>
