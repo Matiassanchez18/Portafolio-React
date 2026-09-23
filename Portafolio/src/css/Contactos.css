@@ -1,0 +1,86 @@
+
+.SeccionContacto {
+  padding: 100px 20px;
+  background-color: var(--bg-secondary);
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.SeccionContacto h2 {
+  margin-bottom: 15px;
+  color: var(--text-primary);
+  font-size: 2.8rem;
+}
+
+.SeccionContacto p {
+  max-width: 600px;
+  margin: 0 auto 35px;
+
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+
+.BotonContacto {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 25px;
+
+  color: white;
+  background-color: var(--blue-primary);
+
+  border: 1px solid var(--blue-primary);
+  border-radius: 10px;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.BotonContacto:hover {
+  color: white;
+  background-color: var(--blue-light);
+  border-color: var(--blue-light);
+
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.RedesContacto {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.RedContacto {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-secondary);
+
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  font-size: 1.2rem;
+
+  transition: all 0.3s ease;
+}
+
+.RedContacto:hover {
+  color: var(--text-primary);
+  border-color: var(--blue-primary);
+  transform: translateY(-3px);
+}
+

@@ -1,10 +1,9 @@
-import MainPortafolio from "./pages/MainPortafolio"
-
+import Inicio from "./pages/Inicio"
 function App() {
 
   return (
    <>
-   <MainPortafolio></MainPortafolio>
+   <Inicio></Inicio>
    </>
   )
 }
