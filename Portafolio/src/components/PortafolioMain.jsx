@@ -5,7 +5,7 @@ import Skills from "../pages/Skills.jsx";
 import Proyectos from "../pages/Proyectos.jsx";
 import Contactos from "../pages/Contactos.jsx";
 
-function PortafolioMain({ Matias, MisProyectos }) {
+function PortafolioMain({ Matias}) {
   return (
     <>
       <Hero Matias={Matias}></Hero>

@@ -1,11 +1,10 @@
 import Gato from "../components/Gato.jsx";
 
 function SobreMi(props) {
-
   const { nombre, apellido, profesion } = props.Matias;
   return (
     <>
-      <section className="border-top p-5 SobreMi" id="SobreMi">
+      <section className=" border-top p-5 SobreMi" id="SobreMi">
         <article className="container">
           <div className="row align-items-center">
             <div className="col-md-5 text-center">

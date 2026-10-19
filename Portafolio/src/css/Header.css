@@ -1,45 +1,55 @@
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 260px;
+  width: 250px;
   height: 100vh;
-  padding: 35px 24px;
-  box-sizing: border-box;
-  background-color: #0f1420;
-  border-right: 1px solid #1e293b;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: stretch;
+  justify-content: flex-start;
+  padding: 30px 20px;
+  background-color: #0f1420;
+  border-right: 1px solid #1e293b;
   z-index: 1000;
+  overflow-y: auto;
 }
 
 .sidebar .navbar-brand {
-  color: #f1f5f9;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 35px;
+  padding: 0;
   white-space: normal;
-  margin: 0 0 45px;
 }
 
 .nombre {
   color: #f1f5f9 !important;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .profesion {
   color: #2563eb;
   font-size: 0.95rem;
   margin: 5px 0 0;
+  font-weight: 400;
 }
 
 .sidebar .navbar-collapse {
+  display: flex !important;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
   flex-grow: 0;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 12px;
 }
 
@@ -47,11 +57,13 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  width: 100%;
   color: #94a3b8;
   padding: 12px 14px;
   border-radius: 8px;
   text-decoration: none;
   transition: 0.2s ease;
+  box-sizing: border-box;
 }
 
 .sidebar-nav .nav-link:hover,
@@ -84,10 +96,19 @@
   box-shadow: 0 0 0 0.2rem rgb(37 99 235 / 25%);
 }
 
+.contenido-principal {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
 @media (max-width: 767.98px) {
   .sidebar {
     position: sticky;
     top: 0;
+    left: auto;
     width: 100%;
     height: auto;
     min-height: 0;
@@ -97,7 +118,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #0f1420;
+    overflow: visible;
     border-right: none;
     border-bottom: 1px solid #1e293b;
   }
@@ -106,6 +127,7 @@
     margin: 0;
     padding: 0;
     flex: 1;
+    min-width: 0;
   }
 
   .sidebar .boton-hamburguesa {
@@ -115,21 +137,24 @@
   }
 
   .sidebar .navbar-collapse {
+    display: none !important;
     flex-basis: 100%;
     width: 100%;
     flex-grow: 0;
-    flex-shrink: 0;
   }
 
-  .sidebar .navbar-collapse.collapsing,
   .sidebar .navbar-collapse.show {
-    display: block;
+    display: flex !important;
+  }
+
+  .sidebar .navbar-collapse.collapsing {
+    display: block !important;
     width: 100%;
   }
 
   .sidebar .sidebar-nav {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column;
     width: 100%;
     padding-top: 12px;
     gap: 5px;
@@ -142,5 +167,11 @@
 
   .sidebar .sidebar-nav .BotonHeader {
     margin-top: 8px;
+  }
+
+  .contenido-principal {
+    margin-left: 0;
+    width: 100%;
+    padding: 16px;
   }
 }

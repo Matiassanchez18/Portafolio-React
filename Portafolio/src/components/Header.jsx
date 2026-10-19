@@ -5,7 +5,7 @@ import "../css/Header.css";
 
 function Header() {
   return (
-    <Navbar expand="md" className="sidebar">
+    <Navbar expand="md" className="sidebar flex-column align-items-start">
       <Navbar.Brand href="#inicio" className="nombre">
         <div>
           Matias Sanchez
@@ -32,12 +32,12 @@ function Header() {
 
           <Link className="nav-link" to="/skills">
             <i className="bi-code-slash"></i>
-           Habilidades
+            Habilidades
           </Link>
 
           <Link className="nav-link" to="/projects">
             <i className="bi-laptop"></i>
-           Proyectos
+            Proyectos
           </Link>
 
           <Link className="nav-link" to="/contact">
