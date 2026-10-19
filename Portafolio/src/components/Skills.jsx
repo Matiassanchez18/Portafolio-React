@@ -10,7 +10,7 @@ function Skills() {
 
     if (!oculto) {
     contenido = (
-                 <div className="col-12 col-md-10 col-lg-4">
+            <div className="col-12 col-md-10 col-lg-4">
               <div className="card-habilidades h-100">
                 <div className="titulo-habilidad">
                   <div className="icono-habilidad">

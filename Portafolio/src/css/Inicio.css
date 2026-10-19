@@ -1,0 +1,19 @@
+
+.layout {
+  min-height: 100vh;
+}
+
+.contenido-principal {
+  margin-left: 260px;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .contenido-principal {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

@@ -6,6 +6,7 @@ import Tour from "../assets/Tour.png";
 import Card from "react-bootstrap/Card";
 
 function Proyectos({ Proyectos }) {
+  console.log(Proyectos)
   return (
     <>
       <section className="border-top ">
