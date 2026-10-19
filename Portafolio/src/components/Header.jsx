@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "../css/Header.css";
@@ -19,26 +19,36 @@ function Header() {
       />
 
       <Navbar.Collapse id="menu-header">
-        <Nav className="sidebar-nav flex-column">
-          <Nav.Link href="#home">
+        <nav className="sidebar-nav flex-column">
+          <Link className="nav-link" to="/">
             <i className="bi bi-house-door"></i>
             Inicio
-          </Nav.Link>
+          </Link>
 
-          <Nav.Link href="#SobreMi">
+          <Link className="nav-link" to="/about">
             <i className="bi bi-person"></i>
             Sobre mí
-          </Nav.Link>
+          </Link>
 
-          <Nav.Link href="#Contacto">
+          <Link className="nav-link" to="/skills">
+            <i className="bi-code-slash"></i>
+           Habilidades
+          </Link>
+
+          <Link className="nav-link" to="/projects">
+            <i className="bi-laptop"></i>
+           Proyectos
+          </Link>
+
+          <Link className="nav-link" to="/contact">
             <i className="bi bi-envelope"></i>
             Contacto
-          </Nav.Link>
+          </Link>
 
-          <Nav.Link href="#Contacto" className="BotonHeader">
+          <Link className="nav-link BotonHeader" to="/#Contacto">
             Trabajemos juntos
-          </Nav.Link>
-        </Nav>
+          </Link>
+        </nav>
       </Navbar.Collapse>
     </Navbar>
   );
