@@ -13,9 +13,12 @@
 }
 
 .HeroSection {
-  min-height: calc(100vh - 80px);
+  min-height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 40px;
 }
 
 .HeroSection article {
@@ -24,6 +27,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 60px;
+  margin-top: 0 !important;
 }
 
 .ListaPresentacion {
@@ -51,8 +55,7 @@
   font-weight: 700;
   line-height: 1;
   letter-spacing: -2px;
-  margin: 0 0 20px 0;
-
+  margin: 0 0 20px;
   text-shadow: 0 0 25px rgba(37, 99, 235, 0.15);
 }
 
@@ -74,10 +77,8 @@
 .BotonHeader {
   box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
   border: 1px solid #0d6efd;
-
   padding: 10px 20px;
   border-radius: 8px;
-
   transition: all 0.3s ease;
 }
 
@@ -85,24 +86,20 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
 }
+
 .DivImg {
   width: 420px;
   height: 420px;
-
   overflow: hidden;
   border-radius: 20px;
-
   border: 1px solid var(--blue-primary);
-
   box-shadow: 0 0 30px rgba(37, 99, 235, 0.15);
-
   flex-shrink: 0;
 }
 
 .DivImg img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   display: block;
 }
@@ -129,20 +126,14 @@
 .IconosRedes a {
   width: 45px;
   height: 45px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: var(--text-secondary);
-
   background-color: var(--bg-card);
-
   border: 1px solid var(--border);
   border-radius: 10px;
-
   text-decoration: none;
-
   transition: all 0.3s ease;
 }
 
@@ -153,9 +144,7 @@
 .IconosRedes a:hover {
   color: var(--blue-light);
   border-color: var(--blue-primary);
-
   box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
-
   transform: translateY(-3px);
 }
 
@@ -206,11 +195,11 @@
   border-radius: 15px;
   overflow: hidden;
   transition: 0.3s ease;
+}
 
-  img {
-    height: 300px;
-    object-fit: cover;
-  }
+.CardProyectos img {
+  height: 300px;
+  object-fit: cover;
 }
 
 .CardProyectos:hover {
@@ -230,6 +219,7 @@
 .CardProyectos .card-text {
   color: var(--text-secondary);
 }
+
 .ListaLenguajes {
   display: flex;
   flex-wrap: wrap;
@@ -262,6 +252,7 @@
   border-radius: 10px;
   padding: 5px;
 }
+
 .Finalizado {
   background-color: rgba(17, 129, 17, 0.637);
   border-radius: 10px;
@@ -271,6 +262,7 @@
 .Desactivado {
   pointer-events: none;
 }
+
 .SeccionSkills {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -289,7 +281,6 @@
 .EtiquetaSkills {
   display: inline-block;
   margin-bottom: 10px;
-
   color: var(--blue-light);
   font-size: 0.8rem;
   font-weight: 700;
@@ -298,11 +289,9 @@
 
 .card-habilidades {
   padding: 30px;
-
   background-color: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 18px;
-
   transition: all 0.3s ease;
 }
 
@@ -316,21 +305,17 @@
   display: flex;
   align-items: center;
   gap: 15px;
-
   margin-bottom: 35px;
 }
 
 .icono-habilidad {
   width: 48px;
   height: 48px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: var(--blue-light);
   font-size: 1.4rem;
-
   background: rgba(37, 99, 235, 0.12);
   border: 1px solid rgba(37, 99, 235, 0.25);
   border-radius: 12px;
@@ -344,7 +329,6 @@
 
 .titulo-habilidad p {
   margin: 4px 0 0;
-
   color: var(--text-secondary);
   font-size: 0.82rem;
 }
@@ -352,7 +336,6 @@
 .habilidad {
   display: flex;
   align-items: center;
-
   gap: 14px;
   margin-bottom: 22px;
 }
@@ -363,7 +346,6 @@
 
 .nombre-habilidad {
   width: 90px;
-
   color: var(--text-primary);
   font-size: 0.9rem;
   font-weight: 500;
@@ -372,30 +354,25 @@
 .BarraProgreso {
   flex: 1;
   height: 7px;
-
   background-color: var(--bg-secondary);
   border-radius: 10px;
-
   overflow: hidden;
 }
 
 .progreso-porcentaje {
   height: 100%;
-
   background-color: var(--blue-primary);
   border-radius: 10px;
-
   transition: width 1s ease;
 }
 
 .porcentaje {
   width: 38px;
-
   color: var(--text-secondary);
   font-size: 0.8rem;
-
   text-align: right;
 }
+
 @media (max-width: 991px) {
   .HeroSection {
     min-height: auto;
@@ -416,9 +393,7 @@
   .TextoDestacado2 {
     border-left: none;
     border-bottom: 3px solid var(--blue-primary);
-
     display: inline-block;
-
     padding-left: 0;
     padding-bottom: 8px;
   }
