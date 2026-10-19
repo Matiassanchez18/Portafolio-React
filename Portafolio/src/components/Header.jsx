@@ -44,7 +44,7 @@ function Header() {
             Contacto
           </NavLink>
 
-          <Link className="nav-link BotonHeader" to="/Contacto">
+          <Link className="nav-link BotonHeader" to="/contact">
             Trabajemos juntos
           </Link>
         </nav>
