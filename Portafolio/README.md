@@ -1,27 +1,54 @@
-Sanchez Matias
+# Portfolio Personal - React
 
-Portfolio personal desarrollado como Trabajo Práctico de React el proyecto presenta información sobre mí, mis habilidades, tecnologías que estoy aprendiendo y algunos de los proyectos en los que trabajé, el objetivo principal es aplicar los conceptos fundamentales de React vistos, como componentes, JSX, props, eventos, useState, renderizado condicional y renderizado dinámico mediante map().
+**Alumno:** Matías Sánchez  
+**Comisión:** 5
 
-tecnologias utilizadas
-React
-Vite
-JSX
-HTML
-CSS
-React Bootstrap
-Bootstrap Icons
-Git
-GitHub
+## Descripción del proyecto
 
+Portfolio personal desarrollado como Trabajo Práctico de React. El proyecto presenta información sobre mí, mis habilidades, las tecnologías que estoy aprendiendo y algunos de los proyectos en los que trabajé.
 
-para ejecutar el proyecto localmente, primero es necesario clonar el repositorio:
+El objetivo principal es aplicar los conceptos fundamentales de React vistos durante la cursada, como componentes, JSX, props, eventos, `useState`, renderizado condicional y renderizado dinámico mediante `map()`. Además, se implementa una navegación multipágina utilizando React Router DOM.
 
+## Tecnologías utilizadas
+
+- React
+- Vite
+- JavaScript y JSX
+- HTML5
+- CSS3
+- React Bootstrap
+- Bootstrap Icons
+- React Router DOM
+- Git y GitHub
+
+## Instalación y ejecución
+
+### 1. Clonar el repositorio
+
+```bash
 git clone https://github.com/Matiassanchez18/Portafolio-React.git
+```
 
-Luego ingresar a la carpeta del proyecto:
+### 2. Ingresar a la carpeta del proyecto
 
-cd portfolio-react
+```bash
+cd Portafolio-React
+```
 
-Instalar las dependencias:
+### 3. Instalar las dependencias
 
+```bash
 npm install
+```
+
+### 4. Ejecutar la aplicación
+
+```bash
+npm run dev
+```
+
+Luego, abrir en el navegador la dirección local que muestra la terminal de Vite.
+
+## Enlace al repositorio
+
+[GitHub - Portafolio React](https://github.com/Matiassanchez18/Portafolio-React)

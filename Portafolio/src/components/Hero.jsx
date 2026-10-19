@@ -1,21 +1,23 @@
-function Hero(props){
-  const {nombre,apellido,profesion}=props.Matias
-    return(
-        <>
-         <section className="container mb-5 HeroSection">
-        <article className="d-flex mt-5">
+import { Link } from "react-router-dom";
+
+function Hero(props) {
+  const { nombre, apellido, profesion } = props.Matias;
+  return (
+    <>
+      <section className="container mb-5 HeroSection mt-5 mb-5">
+        <article className="d-flex">
           <div>
             <ul className="ListaPresentacion">
               <li>
                 <p className="TextoDestacado">Hola, soy</p>
               </li>
               <li>
-                <h1>{nombre} {apellido}</h1>
+                <h1>
+                  {nombre} {apellido}
+                </h1>
               </li>
               <li className="TextoDestacado2">
-                <p>
-                  {profesion}
-                </p>
+                <p>{profesion}</p>
               </li>
               <li>
                 Me interesa crear aplicaciones web modernas, funcionales y
@@ -27,13 +29,12 @@ function Hero(props){
                 ideas en soluciones digitales.
               </li>
               <li className="mt-4">
-                <a
-                  className="BotonHeader me-5 btn btn-outline-primary "
-                  variant="outline-primary"
-                  href="#Proyecto"
+                <Link
+                  className="BotonHeader me-5 btn btn-outline-primary"
+                  to="/projects"
                 >
                   Mirá mis trabajos <i className="bi bi-arrow-right"></i>
-                </a>
+                </Link>
                 <a
                   className="BotonHeader btn btn-primary "
                   href="./assets/cv.matias.pdf"
@@ -71,7 +72,7 @@ function Hero(props){
               </li>
             </ul>
           </div>
-          <div className="DivImg">
+          <div className="DivImg m-4">
             <img
               src="https://images.pexels.com/photos/7988089/pexels-photo-7988089.jpeg"
               alt=""
@@ -79,8 +80,8 @@ function Hero(props){
           </div>
         </article>
       </section>
-        </>
-    )
+    </>
+  );
 }
 
-export default Hero
+export default Hero;

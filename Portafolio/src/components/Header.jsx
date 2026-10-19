@@ -1,38 +1,53 @@
-import Nav from "react-bootstrap/Nav";
+import { Link,NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
 import "../css/Header.css";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="NavHeader p-3">
-      <Navbar.Brand href="#home" className="nombre">
+    <Navbar expand="md" className="sidebar flex-column align-items-start">
+      <Link to="/" className="nombre navbar-brand">
         <div>
           Matias Sanchez
-          <p className="profesion" id="inicio">Programador</p>
+          <p className="profesion">Programador</p>
         </div>
-      </Navbar.Brand>
+      </Link>
 
-      <Navbar.Toggle aria-controls="navbar-nav" />
+      <Navbar.Toggle
+        aria-controls="menu-header"
+        className="boton-hamburguesa"
+      />
 
-      <Navbar.Collapse id="navbar-nav">
-        <Nav className="mx-auto">
-          <Nav.Link href="#home" className="active">
+      <Navbar.Collapse id="menu-header">
+        <nav className="sidebar-nav flex-column">
+          <NavLink className="nav-link" to="/">
+            <i className="bi bi-house-door"></i>
             Inicio
-          </Nav.Link>
+          </NavLink>
 
-          <Nav.Link href="#SobreMi" className="mx-lg-4">
+          <NavLink className="nav-link" to="/about">
+            <i className="bi bi-person"></i>
             Sobre mí
-          </Nav.Link>
+          </NavLink>
 
-          <Nav.Link href="#Contacto">
+          <NavLink className="nav-link" to="/skills">
+            <i className="bi bi-code-slash"></i>
+            Habilidades
+          </NavLink>
+
+          <NavLink className="nav-link" to="/projects">
+            <i className="bi bi-laptop"></i>
+            Proyectos
+          </NavLink>
+
+          <NavLink className="nav-link" to="/contact">
+            <i className="bi bi-envelope"></i>
             Contacto
-          </Nav.Link>
-        </Nav>
+          </NavLink>
 
-        <a className="BotonHeader btn btn-outline-primary" href="#Contacto">
-          Trabajemos juntos
-        </a>
+          <Link className="nav-link BotonHeader" to="/Contacto">
+            Trabajemos juntos
+          </Link>
+        </nav>
       </Navbar.Collapse>
     </Navbar>
   );

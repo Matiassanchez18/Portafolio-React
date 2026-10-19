@@ -3,7 +3,7 @@ import "../css/Footer.css";
 
 function Footer() {
   return (
-    <footer className="PiePagina">
+    <footer className="PiePagina mt-5">
       <div className="container">
         <div className="ContenidoFooter">
           <div className="LogoFooter d-flex">
@@ -39,13 +39,7 @@ function Footer() {
               <i className="bi bi-envelope"></i>
             </a>
 
-            <a
-              href="#inicio"
-              className="FlechaArriba"
-              aria-label="Volver arriba"
-            >
-              <i className="bi bi-arrow-up"></i>
-            </a>
+           
           </div>
         </div>
         <div className="LineaFooter"></div>
