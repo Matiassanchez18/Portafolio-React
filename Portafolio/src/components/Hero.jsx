@@ -3,7 +3,7 @@ function Hero(props){
     return(
         <>
          <section className="container mb-5 HeroSection">
-        <article className="d-flex mt-5">
+        <article className="d-flex">
           <div>
             <ul className="ListaPresentacion">
               <li>

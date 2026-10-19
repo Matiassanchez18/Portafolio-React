@@ -1,6 +1,4 @@
-
 /* ===== SIDEBAR PARA PC ===== */
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -8,6 +6,7 @@
   width: 260px;
   height: 100vh;
   padding: 35px 24px;
+  box-sizing: border-box;
   background-color: #0f1420;
   border-right: 1px solid #1e293b;
   display: flex;
@@ -66,8 +65,6 @@
   color: #2563eb;
 }
 
-/* Botón de contacto */
-
 .sidebar-nav .BotonHeader {
   margin-top: 20px;
   border: 1px solid #2563eb;
@@ -80,8 +77,6 @@
   color: white;
 }
 
-/* Botón hamburguesa */
-
 .boton-hamburguesa {
   border-color: #64748b !important;
 }
@@ -90,17 +85,7 @@
   box-shadow: 0 0 0 0.2rem rgb(37 99 235 / 25%);
 }
 
-/* ===== CONTENIDO PRINCIPAL ===== */
-
-.contenido-principal {
-  margin-left: 260px;
-  min-height: 100vh;
-  padding: 30px;
-}
-
 /* ===== CELULARES Y TABLETS ===== */
-
-
 @media (max-width: 767.98px) {
   .sidebar {
     position: sticky;
@@ -160,11 +145,4 @@
   .sidebar .sidebar-nav .BotonHeader {
     margin-top: 8px;
   }
-
-  .contenido-principal {
-    width: 100%;
-    margin-left: 0;
-    padding: 20px;
-  }
 }
-

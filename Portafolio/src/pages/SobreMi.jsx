@@ -1,4 +1,4 @@
-import Gato from "./Gato.jsx";
+import Gato from "../components/Gato.jsx";
 
 function SobreMi(props) {
 

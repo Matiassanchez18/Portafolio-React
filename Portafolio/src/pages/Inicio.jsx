@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import PortafolioMain from "../components/PortafolioMain";
 import Footer from "../components/Footer";
-import "../css/Inicio.css"
+import "../css/Inicio.css";
 
 function Inicio() {
   const Matias = {
@@ -59,18 +59,14 @@ function Inicio() {
   ];
   return (
     <>
-  <div className="layout">
-    <Header />
+      <div className="layout">
 
-    <div className="contenido-principal">
-      <PortafolioMain
-        Matias={Matias}
-        MisProyectos={Proyectos}
-      />
-
-      <Footer />
-    </div>
-  </div>
+        <Header />
+        <div className="contenido-principal">
+          <PortafolioMain Matias={Matias} MisProyectos={Proyectos} />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }
