@@ -12,7 +12,6 @@
   --border: #26334a;
 }
 
-/* ===== HERO ===== */
 .HeroSection {
   min-height: auto;
   display: flex;
@@ -149,7 +148,6 @@
   transform: translateY(-3px);
 }
 
-/* ===== SOBRE MÍ ===== */
 .SobreMi {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -189,7 +187,6 @@
   font-size: 0.85rem;
 }
 
-/* ===== TARJETAS DE PROYECTOS ===== */
 .CardProyectos {
   width: 100%;
   height: 100%;
@@ -266,7 +263,6 @@
   pointer-events: none;
 }
 
-/* ===== HABILIDADES ===== */
 .SeccionSkills {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -377,7 +373,6 @@
   text-align: right;
 }
 
-/* ===== TABLETS Y CELULARES ===== */
 @media (max-width: 991px) {
   .HeroSection {
     min-height: auto;
