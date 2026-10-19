@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import "../css/Header.css";
 
 function Header() {
   return (
     <Navbar expand="md" className="sidebar flex-column align-items-start">
-      <Navbar.Brand href="#inicio" className="nombre">
+      <Link to="/" className="nombre navbar-brand">
         <div>
           Matias Sanchez
           <p className="profesion">Programador</p>
         </div>
-      </Navbar.Brand>
+      </Link>
 
       <Navbar.Toggle
         aria-controls="menu-header"
@@ -45,7 +44,7 @@ function Header() {
             Contacto
           </Link>
 
-          <Link className="nav-link BotonHeader" to="/#Contacto">
+          <Link className="nav-link BotonHeader" to="/Contacto">
             Trabajemos juntos
           </Link>
         </nav>

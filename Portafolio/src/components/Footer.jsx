@@ -39,13 +39,7 @@ function Footer() {
               <i className="bi bi-envelope"></i>
             </a>
 
-            <a
-              href="#inicio"
-              className="FlechaArriba"
-              aria-label="Volver arriba"
-            >
-              <i className="bi bi-arrow-up"></i>
-            </a>
+           
           </div>
         </div>
         <div className="LineaFooter"></div>

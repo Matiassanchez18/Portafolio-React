@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero(props) {
   const { nombre, apellido, profesion } = props.Matias;
   return (
@@ -27,13 +29,12 @@ function Hero(props) {
                 ideas en soluciones digitales.
               </li>
               <li className="mt-4">
-                <a
-                  className="BotonHeader me-5 btn btn-outline-primary "
-                  variant="outline-primary"
-                  href="#Proyecto"
+                <Link
+                  className="BotonHeader me-5 btn btn-outline-primary"
+                  to="/projects"
                 >
                   Mirá mis trabajos <i className="bi bi-arrow-right"></i>
-                </a>
+                </Link>
                 <a
                   className="BotonHeader btn btn-primary "
                   href="./assets/cv.matias.pdf"

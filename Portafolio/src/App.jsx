@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import SobreMi from "./pages/SobreMi";
 import Skills from "./pages/Skills";
-import Proyectos from "./pages/Proyectos";
+import Proyect from "./pages/Proyectos";
 import Contactos from "./pages/Contactos";
 import Layout from "./components/Layout";
 function App() {
@@ -70,7 +70,7 @@ function App() {
             ></Route>
             <Route path="/about" element={<SobreMi Matias={Matias} />}></Route>
             <Route path="/skills" element={<Skills />}></Route>
-            {/* <Route path="/projects" element={<Proyectos />}></Route> */}
+            <Route path="/projects" element={<Proyect Proyectos={Proyectos} />}></Route>
             <Route path="/contact" element={<Contactos />}></Route>
           </Route>
         </Routes>

@@ -1,11 +1,6 @@
-import foto from "../assets/SDT.png";
-import fotoGammer from "../assets/ProyectoGammer.png";
-import FotoDeporTuc from "../assets/DeporTuc.png";
-import DevJobs from "../assets/DevJobs.png";
-import Tour from "../assets/Tour.png";
 import Card from "react-bootstrap/Card";
 
-function Proyectos({ Proyectos }) {
+function Proyect({ Proyectos }) {
   console.log(Proyectos)
   return (
     <>
@@ -69,4 +64,4 @@ function Proyectos({ Proyectos }) {
     </>
   );
 }
-export default Proyectos;
+export default Proyect;
