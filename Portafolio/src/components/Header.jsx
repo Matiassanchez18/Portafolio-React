@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import "../css/Header.css";
 
@@ -19,30 +19,30 @@ function Header() {
 
       <Navbar.Collapse id="menu-header">
         <nav className="sidebar-nav flex-column">
-          <Link className="nav-link" to="/">
+          <NavLink className="nav-link" to="/">
             <i className="bi bi-house-door"></i>
             Inicio
-          </Link>
+          </NavLink>
 
-          <Link className="nav-link" to="/about">
+          <NavLink className="nav-link" to="/about">
             <i className="bi bi-person"></i>
             Sobre mí
-          </Link>
+          </NavLink>
 
-          <Link className="nav-link" to="/skills">
-            <i className="bi-code-slash"></i>
+          <NavLink className="nav-link" to="/skills">
+            <i className="bi bi-code-slash"></i>
             Habilidades
-          </Link>
+          </NavLink>
 
-          <Link className="nav-link" to="/projects">
-            <i className="bi-laptop"></i>
+          <NavLink className="nav-link" to="/projects">
+            <i className="bi bi-laptop"></i>
             Proyectos
-          </Link>
+          </NavLink>
 
-          <Link className="nav-link" to="/contact">
+          <NavLink className="nav-link" to="/contact">
             <i className="bi bi-envelope"></i>
             Contacto
-          </Link>
+          </NavLink>
 
           <Link className="nav-link BotonHeader" to="/Contacto">
             Trabajemos juntos
