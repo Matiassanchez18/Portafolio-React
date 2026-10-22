@@ -5,6 +5,8 @@ import Skills from "./pages/Skills";
 import Proyect from "./pages/Proyectos";
 import Contactos from "./pages/Contactos";
 import Layout from "./components/Layout";
+import NotFound from "./pages/NotFound";
+
 function App() {
   const Matias = {
     nombre: "Matias",
@@ -73,6 +75,7 @@ function App() {
             <Route path="/projects" element={<Proyect Proyectos={Proyectos} />}></Route>
             <Route path="/contact" element={<Contactos />}></Route>
           </Route>
+          <Route path="*" element={<NotFound/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
